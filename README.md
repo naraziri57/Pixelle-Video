@@ -66,7 +66,8 @@ print(result)
 ```python
 from pixelle_video import PixelleVideoModel, VideoProcessor
 
-processor = VideoProcessor(num_frames=16)
+# Note: bumped num_frames from 16 to 32 — better results on longer clips
+processor = VideoProcessor(num_frames=32)
 model = PixelleVideoModel.from_pretrained("pixelle-video-7b")
 
 video_frames = processor.load_video("my_video.mp4")

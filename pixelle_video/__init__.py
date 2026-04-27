@@ -1,6 +1,10 @@
 """Pixelle-Video: A video generation library built on top of Ovis multimodal architecture.
 
 Fork of AIDC-AI/Pixelle-Video with additional features and improvements.
+
+Personal fork notes:
+- Keeping this around for experimenting with video generation pipelines
+- Main upstream repo: https://github.com/AIDC-AI/Pixelle-Video
 """
 
 __version__ = "0.1.0"

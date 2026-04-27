@@ -91,7 +91,8 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 # show output from print() calls during tests - helpful when debugging locally
 # also added --tb=short so tracebacks are less noisy when hacking around
-addopts = "-s -v --tb=short"
+# removed -v flag since I find the verbose output more annoying than helpful for quick local runs
+addopts = "-s --tb=short"
 
 [tool.mypy]
 python_version = "3.10"

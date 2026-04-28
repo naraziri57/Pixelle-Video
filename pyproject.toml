@@ -93,7 +93,8 @@ python_functions = ["test_*"]
 # also added --tb=short so tracebacks are less noisy when hacking around
 # removed -v flag since I find the verbose output more annoying than helpful for quick local runs
 # added --no-header to cut down on the pytest banner noise too
-addopts = "-s --tb=short --no-header"
+# added -x so it stops on first failure - saves time when iterating on a broken test
+addopts = "-s --tb=short --no-header -x"
 
 [tool.mypy]
 python_version = "3.10"
